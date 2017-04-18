@@ -38,6 +38,22 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-4",
+					"maxclass" : "number",
+					"maximum" : 2,
+					"minimum" : 2,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1286.25, 581.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 48.0,
 					"id" : "obj-148",
 					"linecount" : 2,
@@ -55,7 +71,7 @@
 					"bgcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"bgcolor2" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0,
+					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_color1" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"bgfillcolor_color2" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
@@ -211,7 +227,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1291.0, 500.0, 68.0, 20.0 ],
+					"patching_rect" : [ 1295.0, 410.0, 68.0, 20.0 ],
 					"style" : "",
 					"text" : "swipe up"
 				}
@@ -224,7 +240,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1259.0, 500.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1263.0, 410.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -277,7 +293,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1291.0, 461.0, 89.75, 20.0 ],
+					"patching_rect" : [ 1295.0, 371.0, 89.75, 20.0 ],
 					"style" : "",
 					"text" : "swipe down"
 				}
@@ -290,7 +306,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1259.0, 461.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1263.0, 371.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -343,7 +359,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1291.0, 418.0, 74.0, 20.0 ],
+					"patching_rect" : [ 1295.0, 328.0, 74.0, 20.0 ],
 					"style" : "",
 					"text" : "swipe left"
 				}
@@ -356,7 +372,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1259.0, 418.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1263.0, 328.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -409,7 +425,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1291.0, 379.0, 74.0, 20.0 ],
+					"patching_rect" : [ 1295.0, 289.0, 74.0, 20.0 ],
 					"style" : "",
 					"text" : "swipe right"
 				}
@@ -422,7 +438,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1259.0, 379.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1263.0, 289.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -462,7 +478,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1259.5, 342.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1263.5, 252.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -473,7 +489,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1291.0, 343.0, 61.0, 20.0 ],
+					"patching_rect" : [ 1295.0, 253.0, 61.0, 20.0 ],
 					"style" : "",
 					"text" : "thrust"
 				}
@@ -784,29 +800,53 @@
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 29.0,
+					"clipheight" : 37.5,
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "isthatyou.aiff",
+								"filename" : "eroica.aiff",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"timestretch" : [ 0 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"followglobaltempo" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
-									"basictuning" : [ 440 ],
 									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
 									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"originallengthms" : [ 0.0 ]
+									"formantcorrection" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "ei_triangle.aiff",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"basictuning" : [ 440 ],
+									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ]
 								}
 
 							}
@@ -818,8 +858,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 1259.0, 670.0, 142.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 1259.0, 624.5, 142.0, 77.0 ],
+					"style" : "velvet"
 				}
 
 			}
@@ -1419,7 +1459,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1279.25, 542.0, 101.5, 52.0 ],
+					"patching_rect" : [ 1286.25, 444.0, 101.5, 52.0 ],
 					"style" : "",
 					"text" : "Swipe Up -Musica",
 					"textjustification" : 1
@@ -1434,7 +1474,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1269.0, 611.0, 128.0, 52.0 ],
+					"patching_rect" : [ 1275.875, 505.0, 128.0, 52.0 ],
 					"style" : "",
 					"text" : "Swipe Down - Quietus",
 					"textjustification" : 1
@@ -1869,9 +1909,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-129", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"order" : 1,
 					"source" : [ "obj-129", 0 ]
 				}
 
@@ -2189,10 +2240,40 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"order" : 1,
 					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"order" : 0,
+					"source" : [ "obj-41", 0 ]
 				}
 
 			}
@@ -2201,6 +2282,7 @@
 					"destination" : [ "obj-84", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"order" : 1,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -2494,7 +2576,7 @@
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-79", 0 ]
 				}
 
@@ -2502,6 +2584,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
 					"order" : 0,
@@ -2707,15 +2799,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "isthatyou.aiff",
+				"name" : "eroica.aiff",
 				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "littleBitsArduino.jpg",
-				"bootpath" : "~/Desktop",
-				"type" : "JPEG",
+				"name" : "ei_triangle.aiff",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/samples",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
  ],
