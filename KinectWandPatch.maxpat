@@ -38,6 +38,19 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-117",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 351.0, 85.0, 150.0, 48.0 ],
+					"style" : "",
+					"text" : "operate fan - Waddiwasi\nlumos/nox - leds\nMusica/quietus - sound"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-116",
 					"ignoreclick" : 1,
 					"maxclass" : "multislider",
